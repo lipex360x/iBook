@@ -10,19 +10,13 @@
   </section>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({})
-</script>
-
 <style lang="scss" scoped>
 .layout-ibook {
   margin-top: 2rem;
   display: grid;
   grid-gap: 4rem;
 
-  footer {
+  .organisms-footer {
     margin-top: 2rem;
     position: absolute;
     bottom: 0;
