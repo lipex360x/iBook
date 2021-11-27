@@ -11,7 +11,7 @@ export default Vue.extend({})
 </script>
 
 <style lang="scss" scoped>
-main {
+.boson-container {
   margin: 0 auto;
   max-width: 1070px;
 

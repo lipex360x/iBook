@@ -2,9 +2,9 @@
   <section class="layout-ibook">
     <Header />
 
-    <Main>
+    <Container>
       <Nuxt />
-    </Main>
+    </Container>
 
     <Footer />
   </section>
@@ -22,11 +22,8 @@ export default Vue.extend({})
   display: grid;
   grid-gap: 4rem;
 
-  main {
-    padding-bottom: 6.75rem;
-  }
-
   footer {
+    margin-top: 2rem;
     position: absolute;
     bottom: 0;
     left: 0;

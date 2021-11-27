@@ -1,9 +1,9 @@
 <template>
   <footer class="organism-footer">
-    <Main>
+    <Container>
       <Logo />
       <p>Copyright &copy; {{ currentYear }} iBook</p>
-    </Main>
+    </Container>
   </footer>
 </template>
 
@@ -25,7 +25,7 @@ export default Vue.extend({
   height: 110px;
   background: color(dark, darkest);
 
-  main {
+  .boson-container {
     display: grid;
     height: 100%;
     grid-auto-flow: column;
