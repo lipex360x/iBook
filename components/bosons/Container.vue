@@ -1,7 +1,7 @@
 <template>
-  <main class="boson-container">
+  <section class="boson-container">
     <slot />
-  </main>
+  </section>
 </template>
 
 <style lang="scss" scoped>
