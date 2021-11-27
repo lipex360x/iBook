@@ -12,7 +12,7 @@
     ]
   },
 
-  "VueJS Component Template": {
+  "NuxtJS Component Template": {
     "prefix": "componentTemplate",
     "body": [
       "<template>",
@@ -30,7 +30,7 @@
     ]
   },
 
-  "NextJS Script Template": {
+  "NuxtJS Script Template": {
     "prefix": "scriptTemplate",
     "body": [
       "<script lang=\"ts\">",
@@ -43,7 +43,7 @@
     ]
   },
 
-  "NextJS Page Template": {
+  "NuxtJS Page Template": {
     "prefix": "pageTemplate",
     "body": [
       "<template>",
@@ -61,7 +61,7 @@
     ]
   },
 
-  "VueJS Props Template": {
+  "NuxtJS Props Template": {
     "prefix": "propsTemplate",
     "body": [
       "props: {",
@@ -70,18 +70,29 @@
     ]
   },
 
-  "VueJS Computed Template": {
-    "prefix": "computedTemplate",
+  "NuxtJS Methods Template": {
+    "prefix": "methodsTemplate",
     "body": [
-      "computed:{",
-      "  ${1:FUNCTION_NAME}() {",
+      "methods: {",
+      "  ${1:FUNCTION_NAME}(): ${2|void,string,number,bolean,object,array|} {",
       "    return true",
       "  }",
       "}",
     ]
   },
 
-  "VueJS Mounted Template": {
+  "NuxtJS Computed Template": {
+    "prefix": "computedTemplate",
+    "body": [
+      "computed: {",
+      "  ${1:FUNCTION_NAME}(): ${2|void,string,number,bolean,object,array|} {",
+      "    return true",
+      "  }",
+      "}",
+    ]
+  },
+
+  "NuxtJS Mounted Template": {
     "prefix": "mountedTemplate",
     "body": [
       "mounted() {",
@@ -89,5 +100,27 @@
       "}",
     ]
   },
+
+  "NuxtJS @Action Store": {
+    "prefix": "actionStoreTemplate",
+    "body": [
+      "@Action",
+      "${1:function_name}() {",
+      "  this.context.commit('${2:MUTATION_NAME}', 'value')",
+      "}",
+    ]
+  },
+
+  "NuxtJS @Mutation Store": {
+    "prefix": "mutationStoreTemplate",
+    "body": [
+      "@Mutation",
+      "${1:MUTATION_NAME}(${2:prop_name}: ${3|string,number,bolean,object|}) {",
+      "  this.${4:state} = ${2:prop_name}",
+      "}",
+    ]
+  },
+
+
 
 }
