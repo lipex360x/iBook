@@ -16,18 +16,10 @@
     "prefix": "componentTemplate",
     "body": [
       "<template>",
-      "  <${1:TAG_NAME} class=\"${TM_DIRECTORY/^.+\\/(.*)$/$1/}-${TM_FILENAME_BASE/(.*)/${1:/downcase}/}\">",
+      "  <section class=\"${TM_DIRECTORY/^.+\\/(.*)$/$1/}-${TM_FILENAME_BASE/(.*)/${1:/downcase}/}\">",
       "    <h1>$TM_FILENAME_BASE</h1>",
-      "  </${1:TAG_NAME}>",
+      "  </section>",
       "</template>",
-      "",
-      "<script lang=\"ts\">",
-      "import Vue from 'vue'",
-      "",
-      "export default Vue.extend({",
-      "  // vue here",
-      "})",
-      "</script>",
       "",
       "<style lang=\"scss\" scoped>",
       ".${TM_DIRECTORY/^.+\\/(.*)$/$1/}-${TM_FILENAME_BASE/(.*)/${1:/downcase}/} {",
@@ -35,6 +27,19 @@
       "}",
       "</style>",
       ""
+    ]
+  },
+
+  "NextJS Script Template": {
+    "prefix": "scriptTemplate",
+    "body": [
+      "<script lang=\"ts\">",
+      "import Vue from 'vue'",
+      "",
+      "export default Vue.extend({",
+      "  // vue here",
+      "})",
+      "</script>",
     ]
   },
 
@@ -55,7 +60,6 @@
       ""
     ]
   },
-
 
   "VueJS Props Template": {
     "prefix": "propsTemplate",

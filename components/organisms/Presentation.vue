@@ -9,14 +9,6 @@
   </section>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({
-  // vue here
-})
-</script>
-
 <style lang="scss" scoped>
 .organisms-presentation {
   display: grid;

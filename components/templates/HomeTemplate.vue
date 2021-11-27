@@ -1,11 +1,13 @@
 <template>
-  <section>
-    <h1>Nuxt Boilerplate</h1>
+  <section class="templates-home">
+    <PageTitle text="Welcome to" strong="iBook" />
+    <Releases />
   </section>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({})
-</script>
+<style lang="scss" scoped>
+.templates-home {
+  display: grid;
+  grid-gap: 4rem;
+}
+</style>

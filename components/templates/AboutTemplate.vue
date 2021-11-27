@@ -1,6 +1,6 @@
 <template>
   <section class="templates-about">
-    <PageTitle text="O que é o " strong="iBook?" />
+    <PageTitle text="What is " strong="iBook?" />
     <Presentation />
   </section>
 </template>
