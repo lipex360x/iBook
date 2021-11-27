@@ -1,8 +1,8 @@
 export default {
   head: {
-    title: 'Nuxt Boilerplate',
+    title: 'iBook',
     htmlAttrs: {
-      lang: 'pt'
+      lang: 'pt-BR'
     },
     meta: [
       { charset: 'utf-8' },
@@ -10,7 +10,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Nuxt Boilerplate'
+        content: 'iBook'
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]

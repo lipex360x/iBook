@@ -1,9 +1,3 @@
 <template>
-  <HomeTemplate />
+  <section><h1>iBook</h1></section>
 </template>
-
-<script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({})
-</script>
