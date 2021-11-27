@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer class="organism-footer">
     <Main>
       <Logo />
       <p>Copyright &copy; {{ currentYear }} iBook</p>
@@ -20,7 +20,7 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-footer {
+.organism-footer {
   width: 100%;
   height: 110px;
   background: color(dark, darkest);

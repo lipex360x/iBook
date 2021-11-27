@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="organism-header">
     <nav>
       <ul>
         <li>
@@ -19,9 +19,10 @@
 </template>
 
 <style lang="scss" scoped>
-header {
+.organism-header {
   display: grid;
   justify-content: center;
+
   nav {
     box-shadow: -1px 8px 26px 5px rgba(0, 0, 0, 0.12);
     background: color(dark, darkest);
@@ -30,6 +31,7 @@ header {
     padding: 0 10px;
     border-radius: 35px;
     align-items: center;
+
     ul {
       display: grid;
       grid-template-columns: repeat(3, auto);
@@ -37,10 +39,12 @@ header {
       justify-content: space-around;
       height: 100%;
     }
+
     li a {
       color: color(light, darkest);
       position: relative;
       font-weight: 500;
+
       &.nuxt-link-exact-active:after {
         content: '';
         position: absolute;

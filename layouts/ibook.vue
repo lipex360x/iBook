@@ -17,10 +17,10 @@ export default Vue.extend({})
 </script>
 
 <style lang="scss" scoped>
-section {
-  margin-top: 3rem;
+.layout-ibook {
+  margin-top: 2rem;
   display: grid;
-  grid-gap: 6.75rem;
+  grid-gap: 4rem;
 
   main {
     padding-bottom: 6.75rem;

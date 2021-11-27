@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <section class="atom-logo">
     <img src="@/assets/img/logo.svg" alt="iBook" />
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>
-div {
+.atom-logo {
   width: 100%;
 
   img {
