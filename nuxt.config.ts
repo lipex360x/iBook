@@ -31,7 +31,7 @@ export default {
   modules: ['@nuxtjs/axios', 'cookie-universal-nuxt'],
 
   axios: {
-    baseURL: 'http://...'
+    baseURL: 'https://ibook-api.herokuapp.com'
   },
 
   build: {
