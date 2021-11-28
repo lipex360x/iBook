@@ -40,8 +40,21 @@
       "  // vue here",
       "})",
       "</script>",
+      ""
     ]
   },
+
+  "NuxtJS Style Template": {
+    "prefix": "styleTemplate",
+    "body": [
+      "<style lang=\"scss\" scoped>",
+      ".${TM_DIRECTORY/^.+\\/(.*)$/$1/}-${TM_FILENAME_BASE/(.*)/${1:/downcase}/} {",
+      "  // scss here",
+      "}",
+      "</style>",
+    ]
+  },
+
 
   "NuxtJS Page Template": {
     "prefix": "pageTemplate",

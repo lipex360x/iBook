@@ -1,7 +1,7 @@
 <template>
-  <section class="organisms-booklist">
+  <div class="organisms-booklist">
     <BookCard v-for="book in $books" :key="book.id" :book="book" />
-  </section>
+  </div>
 </template>
 
 <script lang="ts">
@@ -17,7 +17,7 @@ export default Vue.extend({
 })
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .organisms-booklist {
   display: grid;
   grid-template-columns: repeat(6, 1fr);

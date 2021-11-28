@@ -1,7 +1,7 @@
 <template>
-  <section class="atom-logo">
+  <div class="atom-logo">
     <img src="@/assets/img/logo.svg" alt="iBook" />
-  </section>
+  </div>
 </template>
 
 <style lang="scss" scoped>
