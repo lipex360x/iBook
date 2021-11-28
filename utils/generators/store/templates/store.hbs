@@ -1,0 +1,47 @@
+// Remember to initialize this store in _initialize.ts file
+/*
+
+import {{file.className}} from './{{file.name}}'
+
+let {{file.name}}: {{file.className}}
+
+--initialize--
+{{file.name}} = getModule({{file.className}}, store)
+
+*/
+
+import { Module, VuexModule, Action, Mutation } from 'vuex-module-decorators'
+
+@Module({ name: '{{file.name}}', stateFactory: true, namespaced: true })
+export default class {{file.className}} extends VuexModule {
+  private message = 'Hello Store'
+
+  public get $message() {
+    return this.message
+  }
+
+  @Mutation
+  public SET_MESSAGE(message: string) {
+    this.message = message
+  }
+
+  @Action
+  public setMessage() {
+    this.context.commit('SET_MESSAGE', 'Hello World')
+  }
+
+  // @Action
+  // public async index() {}
+
+  // @Action
+  // public async create() {}
+
+  // @Action
+  // public async show() {}
+
+  // @Action
+  // public async update() {}
+
+  // @Action
+  // public async destroy() {}
+}

@@ -121,6 +121,16 @@
     ]
   },
 
+  "NuxtJS Getters Store": {
+    "prefix": "getStoreTemplate",
+    "body": [
+      "public get \\$${1:PROP_NAME}() {",
+      "  return this.${1:PROP_NAME}",
+      "}",
+    ]
+  },
+
+
 
 
 }
