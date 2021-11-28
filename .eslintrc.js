@@ -15,6 +15,7 @@ module.exports = {
   rules: {
     'vue/no-v-html': 'off',
     'no-console': 'off',
-    'import/no-mutable-exports': 'off'
+    'import/no-mutable-exports': 'off',
+    'import/named': 'off'
   }
 }
