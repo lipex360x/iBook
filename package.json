@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
+    "gen": "yarn plop --plopfile ./utils/generators/plopfile.js",
     "api": "json-server --watch db.json -p 3333",
     "build": "nuxt build",
     "start": "nuxt start",
