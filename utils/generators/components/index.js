@@ -1,6 +1,6 @@
 /* eslint-disable eqeqeq */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-const capitalize = require('../_utils/capitalize')
+// const capitalize = require('../_utils/capitalize')
 
 module.exports = {
   description: 'Generate a Component',
@@ -44,7 +44,7 @@ module.exports = {
 
     const file = {
       path: `../../components/${data.type + 's'}`,
-      name: capitalize(data.name),
+      name: data.name,
       class: `${data.type + 's'}-${data.name.toLowerCase()}`,
       scripts: data.scripts
     }
